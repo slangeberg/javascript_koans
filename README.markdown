@@ -31,7 +31,7 @@ customized report viewer.
 
 ### Changelog
 
-*  v0 - Oct 2012 - Based on the projects of
+*  v0 - Oct 2012 - Based on the projects of:
 *       David Laing - https://github.com/mrdavidlaing/javascript-koans
 *       Liam McLennan - https://github.com/liammclennan/JavaScript-Koans
 
