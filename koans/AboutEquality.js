@@ -1,23 +1,25 @@
 
-koansuite( "AboutEquality", function() {
+koansuite( "About Equality", function() {
 
-    koan("numeric equality", function() {
-        assert(3 + __ ===  7, 'hmmmm?');
+    // Replace any __ with your answer
+
+    koan( "Numeric Equality", function() {
+        assert(3 + __ ===  7, 'Think: think!!');
     });
 
-    koan("string equality", function() {
-        assert( "3" + __ == "37", "concatenate the strings");
+    koan("String Equality", function() {
+        assert( "3" + "_" === "37", "concatenate the strings");
     });
 
-    koan("equality without type coercion", function() {
+    koan("Equality without type coercion", function() {
         assert(3 === __, 'what is exactly equal to 3?');
     });
 
-    koan("equality with type coercion", function() {
-        assert( 3 == "__", 'what string is equal to 3, with type coercion?');
+    koan("Equality with type coercion", function() {
+        assert( 3 == "_", 'what string is equal to 3, with type coercion?');
     });
 
-    koan("string literals", function() {
-        assert( "frankenstein" === '__', "quote types are interchangable, but must match.");
+    koan("String Literals", function() {
+        assert( "frankenstein" === '____', "quote types are interchangable, but must match.");
     });
 } );
