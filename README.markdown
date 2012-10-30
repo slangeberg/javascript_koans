@@ -29,9 +29,16 @@ refresh the browser. Rinse and repeat until all tests turn green.
 The test runner used is [Jasmine](http://pivotal.github.com/jasmine/) with a
 customized report viewer.
 
+### Project notes
+
+When I first encountered the concepts of Koans in Scala, I was very excited to apply the same technique to javascript.
+On looking in Github I did find two other fine projects. Neither of them was exactly the experience that I'd
+encountered in those Scala Koans, so I've taken the features I've like from both, to bring the experience closer
+to what I remember enjoying in the Scala version, with some embellishments of my own.
+
 ### Changelog
 
-*  v0 - Oct 2012 - Based on the projects of:
+*  v0 - Oct 2012 - Based on the excellent projects of:
 *       David Laing - https://github.com/mrdavidlaing/javascript-koans
 *       Liam McLennan - https://github.com/liammclennan/JavaScript-Koans
 
@@ -40,6 +47,7 @@ customized report viewer.
 *  Venkat Subranamiam - for the great introduction to Scala Koans, at No Fluff Just Stuff http://www.nofluffjuststuff.com/conference/minneapolis/2012/10/session?id=27733
 *  David Laing - His project provided great UI harness for JS koans
 *  Liam McLennan - I have adopted the format for his JS koan questions
+*  Scala Koans Project - Of course: http://www.scalakoans.org
 
 ##### License
 
