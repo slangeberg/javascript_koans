@@ -34,7 +34,7 @@ koansuite("About Functions", function() {
 
         assert( message === __, "What's the message?" );
     });
-            /*
+    /*
     koan("should have lexical scoping", function () {
 
         var variable = "top-level";
