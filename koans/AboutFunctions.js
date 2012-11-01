@@ -10,12 +10,13 @@ koansuite("About Functions", function() {
             return c - d;
         }
 
-        assert( add(1, 2) === 3, "How much?");
+        assert( add(1, 2) === __, "How much?");
 
-        assert( subtract(3, 4) === -1, "Variables can reference functions");
+        assert( subtract(3, 4) === __, "Variables can reference functions");
     });
 
-    koan("should know internal variables override outer variables", function () {
+    koan( "Internal Variables Override Outer. Right?", function () {
+        
         var message = "Outer";
 
         function getMessage() {
@@ -27,13 +28,17 @@ koansuite("About Functions", function() {
             return message;
         }
 
-        expect(getMessage()).toBe(FILL_ME_IN);
-        expect(overrideMessage()).toBe(FILL_ME_IN);
-        expect(message).toBe(FILL_ME_IN);
-    });
+        assert( getMessage() === __, "Can get message");
 
+        assert( overrideMessage() === __, "Read override msg");
+
+        assert( message === __, "What's the message?" );
+    });
+            /*
     koan("should have lexical scoping", function () {
+
         var variable = "top-level";
+
         function parentfunction() {
             var variable = "local";
             function childfunction() {
@@ -41,7 +46,7 @@ koansuite("About Functions", function() {
             }
             return childfunction();
         }
-        expect(parentfunction()).toBe(FILL_ME_IN);
+        assert(parentfunction()).toBe(FILL_ME_IN);
     });
 
     koan("should use lexical scoping to synthesise functions", function () {
@@ -56,7 +61,7 @@ koansuite("About Functions", function() {
         var increaseBy3 = makeIncreaseByFunction(3);
         var increaseBy5 = makeIncreaseByFunction(5);
 
-        expect(increaseBy3(10) + increaseBy5(10)).toBe(FILL_ME_IN);
+        assert(increaseBy3(10) + increaseBy5(10)).toBe(FILL_ME_IN);
     });
 
     koan("should allow extra function arguments", function () {
@@ -65,13 +70,13 @@ koansuite("About Functions", function() {
             return firstArg;
         }
 
-        expect(returnFirstArg("first", "second", "third")).toBe(FILL_ME_IN);
+        assert(returnFirstArg("first", "second", "third")).toBe(FILL_ME_IN);
 
         function returnSecondArg(firstArg, secondArg) {
             return secondArg;
         }
 
-        expect(returnSecondArg("only give first arg")).toBe(FILL_ME_IN);
+        assert(returnSecondArg("only give first arg")).toBe(FILL_ME_IN);
 
         function returnAllArgs() {
             var argsArray = [];
@@ -81,7 +86,7 @@ koansuite("About Functions", function() {
             return argsArray.join(",");
         }
 
-        expect(returnAllArgs("first", "second", "third")).toBe(FILL_ME_IN);
+        assert(returnAllArgs("first", "second", "third")).toBe(FILL_ME_IN);
     });
 
     koan("should pass functions as values", function () {
@@ -95,21 +100,22 @@ koansuite("About Functions", function() {
         };
 
         var praiseSinger = { givePraise: appendRules };
-        expect(praiseSinger.givePraise("John")).toBe(FILL_ME_IN);
+        assert(praiseSinger.givePraise("John")).toBe(FILL_ME_IN);
 
         praiseSinger.givePraise = appendDoubleRules;
-        expect(praiseSinger.givePraise("Mary")).toBe(FILL_ME_IN);
+        assert(praiseSinger.givePraise("Mary")).toBe(FILL_ME_IN);
 
     });
 
     koan("should use function body as a string", function () {
         var add = new Function("a", "b", "return a + b;");
-        expect(add(1, 2)).toBe(FILL_ME_IN);
+        assert(add(1, 2)).toBe(FILL_ME_IN);
 
         var multiply = function (a, b) {
             //An internal comment
             return a * b;
         };
-        expect(multiply.toString()).toBe(FILL_ME_IN);
+        assert(multiply.toString()).toBe(FILL_ME_IN);
     });
+    */
 });
